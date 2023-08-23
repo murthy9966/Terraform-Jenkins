@@ -4,9 +4,9 @@ provider "aws" {
 
 resource "aws_s3_bucket" "murthy99949220245" {
   bucket = "murthy99949220245"  # Change this to your desired bucket name
-  acl    = "private"  # You can change the ACL according to your needs
+  acl    = "publi"  # You can change the ACL according to your needs
 
   tags = {
-    Name = "My S3 Bucket"
+    Name = "murthy99949220245"
   }
 }
