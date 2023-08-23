@@ -1,5 +1,7 @@
 provider "aws" {
-  region = "us-east-1"  # Specify the desired AWS region
+  region     = "us-east-2"
+  access_key = "AKIA3FAEK7GMT6T5CR7L"
+  secret_key = "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"
 }
 
 resource "aws_vpc" "my_vpc" {
