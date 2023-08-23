@@ -5,7 +5,7 @@ provider "aws" {
 resource "aws_instance" "example" {
   ami           = "ami-053b0d53c279acc90" # Replace with your desired AMI ID
   instance_type = "t2.micro"             # Replace with your desired instance type
-  key_name      = "your-key-pair-name"   # Replace with your SSH key pair name
+  key_name      = "divya"   # Replace with your SSH key pair name
   subnet_id     = aws_subnet.example_subnet[0].id # Use the subnet from the VPC example in the previous answer
   tags = {
     Name = "example-instance"
