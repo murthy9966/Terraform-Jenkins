@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_vpc" "example" {
-  cidr_block = "10.0.0.0/16" # Replace with your desired VPC CIDR block
+  cidr_block = "192.168.0.0/24" # Replace with your desired VPC CIDR block
 
   tags = {
     Name = "example-vpc"
@@ -13,7 +13,7 @@ resource "aws_vpc" "example" {
 resource "aws_subnet" "example_subnet" {
   count           = 2
   vpc_id          = aws_vpc.example.id
-  cidr_block      = "10.0.1.0/24" # Replace with your desired subnet CIDR blocks
+  cidr_block      = "192.168.1.0/22" # Replace with your desired subnet CIDR blocks
   availability_zone = "us-east-1a" # Replace with your desired availability zones
 
   tags = {
